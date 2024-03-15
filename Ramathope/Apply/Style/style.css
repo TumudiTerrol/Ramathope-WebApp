@@ -1,0 +1,193 @@
+/* ROOT SECTION
+=========================== */
+:root{
+    --primary-color: rgba(12, 135, 218);
+    --secondary-color: #ffbd27;;
+    --font-color: #333;
+    --formal-color: whitesmoke;
+    --bg-color: rgba(223, 220, 220, 0.616);
+    --footer-color: rgba(247, 211, 12, 0.438);
+    
+
+    --font-size: 14px;
+    --font-width: 700;
+}
+/* ============================== */
+*{
+    margin:0; 
+    padding:0;
+    font-family: 'Poppins', sans-serif; 
+    padding: 10px;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: var(--font-color);
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, var(--primary-color), 
+    var(--secondary-color));
+}
+
+/* POPUP SECTION
+=========================== */
+.popup{
+    width: 400px;
+    background: var(--formal-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 100;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50% -50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: linear-gradient(135deg, var(--primary-color), 
+    var(--secondary-color));
+    color: var(--formal-color);
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+}
+.popup button:hover{
+    background: linear-gradient(-135deg, var(--primary-color), 
+    var(--secondary-color));
+}
+/* ============================== */
+
+/* CONTAINER SECTION
+=========================== */
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: var(--formal-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 25px 30px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    margin-left: 0;
+    bottom: 0;
+    position: absolute;
+    height: 3px;
+    width: 100px;
+    background: linear-gradient(135deg, var(--primary-color), 
+    var(--secondary-color));
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{margin-bottom: 15px; width: calc(100% / 2 - 20px);}
+.user-details .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: var(--secondary-color);
+}
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9dd;
+    border-radius: 50px;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .tow,
+#dot-3:checked ~ .category label .three{
+    border-color: #d9d9dd;
+    background: #ffbd27;
+}
+form input[type="radio"]{display: none;}
+form .button{
+    height: 45px;
+}
+form .button input{
+    height: 3rem;
+    width: 100%;
+    outline: none;
+    color: var(--formal-color);
+    background: linear-gradient(135deg, var(--primary-color), 
+    var(--secondary-color));
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 500;
+}
+form .button input:hover{
+    background: linear-gradient(-135deg, var(--primary-color), 
+    var(--secondary-color));
+}
+.link a{color: #9c2aa7;}
+.link a:hover{color: var(--secondary-color);}
+/* ============================== */
+
+
+
+
+
+

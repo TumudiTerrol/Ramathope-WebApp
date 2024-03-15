@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+    <!-- 
+        ======== CSS LINK SECTION ============
+    -->
+    <link rel="stylesheet" href="../Apply/Style/style.css">
+    <!-- 
+        ======================================
+    -->
+</head>
+<body>
+    <!-- 
+        ======== MESSAGEBOX SECTION ============
+    -->
+    <div class="popup" id="popup">
+        <img src="tick.png" alt="">
+        <h2>Thank You!</h2>
+        <P>We've noticed your request, please call us at 082 704 9086
+            or send us email for Quick respond. Thanks!
+        </P>
+        <button type="button" onclick="closePopup()">OK</button>
+    </div>
+    <!-- 
+        ======================================
+    -->
+    <!-- 
+        ======== FORM VALIDATION SECTION ============
+    -->
+    <div class="container">
+        <div class="link">
+            <p>Or Download the PDF Applicatopn Form<a href="../PDF/DEMO APPLICATION FORM OF RAMATHOPE SECONDARY SCHOOL.pdf" 
+                download >Click to download!</a></p>
+                <p>Submit this form to the school or send us via email<br>
+                <a href="#" email>ramathopeschool@gmail.com</a></p>
+        </div>
+        <div class="title">Registration Form</div>
+        <form action="#">
+            <div class="user-details">
+                <!--======== INPUT BOX 1 ============-->
+                <div class="input-box">
+                    <span class="input-box">Email</span>
+                    <input type="email" placeholder="Enter Your Email" required>
+                </div>
+                <!--======================================-->
+                
+                <!--======== INPUT BOX 2 ============-->
+                <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="name" placeholder="Enter Your Name" required>
+                </div>
+                <!--======================================-->
+
+                <!--======== INPUT BOX 3 ============-->
+                <div class="input-box">
+                    <span class="details">Surname</span>
+                    <input type="second-name" placeholder="Enter Your Surname" required>
+                </div>
+                <!--======================================-->
+
+                <!--======== INPUT BOX 4 ============-->
+                <div class="input-box">
+                    <span class="details">Cell Number</span>
+                    <input type="text" placeholder="+27" required>
+                </div>
+                <!--======================================-->
+
+                <!--======== INPUT BOX 5 ============-->
+                <div class="input-box">
+                    <span class="details">Identity</span>
+                    <input type="number" placeholder="Enter ID or Passport" required>
+                </div>
+                <!--======================================-->
+
+                <!--======== INPUT BOX 7 ============-->
+                <div class="input-box">
+                    <span class="details">Class Grade's</span>
+                    <input type="text" placeholder="Enter a Class/Grade" required>
+                </div>
+                <!--======================================-->
+                </div>
+                <!--======================================-->
+                <!--======== BUTTON SUBMIT ============-->
+        <div class="button">
+            <input type="submit" value="Register" onclick="openPopup()">
+        </div>
+    <!--======================================-->
+            </div>
+    </div>
+    <!--======================================-->   
+    </form>
+    <!-- download link -->
+    <!------------------->
+    </div>
+    <!-- 
+        =============================================
+    -->
+    <script src="../Apply/script/java.js"></script>
+</body>
+</html>
